@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.eci.arep.secureapp.model.User;
 import edu.eci.arep.secureapp.service.UserService;
 
-@CrossOrigin(origins = "https://securityfrontarep.duckdns.org", allowCredentials = "true")
+@CrossOrigin(origins = "https://localhost:5000", allowCredentials = "true")
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -45,4 +45,3 @@ public class UserController {
         }
     }
 }
-

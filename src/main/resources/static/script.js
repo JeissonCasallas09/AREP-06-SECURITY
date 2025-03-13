@@ -1,4 +1,4 @@
-let IPADDRESS = "securitybackarep.duckdns.org";
+let IPADDRESS = "localhost";
 
 document.addEventListener("DOMContentLoaded", () => {
     loadProperties();
