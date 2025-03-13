@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+}
+
+.mainContainer {
+    width: 95vw;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    padding: 2vh 0;
+}
+
+
+.content {
+    display: flex;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.formContainer {
+    width: 35%;
+    min-height: 85%;
+    background: white;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 1vh;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.6vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover y focus para mejor UX */
+input:hover, select:hover,
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+label {
+    font-size: 1.8vh;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 1vh;
+    font-size: 1.6vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.boton {
+    background-color: #007bff;
+    color: white;
+    padding: 1vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2vh;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+}
+
+
+.tableContainer {
+    width: 60%;
+    min-height: 85%;
+    background: white;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    overflow-x: auto; 
+}
+
+
+.CrudTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5vh;
+}
+
+.CrudTable th, .CrudTable td {
+    border: 1px solid #ddd;
+    padding: 1vh;
+    text-align: center;
+}
+
+.CrudTable th {
+    background-color: #007bff;
+    color: white;
+}
+
+.CrudTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.CrudTable tr:hover {
+    background-color: #ddd;
+}
+
+
+.image-section {
+    width: 20vh;
+    height: auto;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+        height: auto;
+        gap: 2vh;
+    }
+
+    .formContainer, .tableContainer {
+        width: 90%;
+        height: auto;
+    }
+
+    .CrudTable th, .CrudTable td {
+        font-size: 1.5vh;
+        padding: 0.5vh;
+    }
+}
+
+#loginForm {
+    width: 35%;
+    min-height: 85%;
+    background: white;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+button {
+    background: #0077b6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #005f87;
+}
+
+#registerForm {
+    width: 35%;
+    min-height: 85%;
+    background: white;
+    border: 5px solid #007bff;
+    border-radius: 10px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+

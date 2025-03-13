@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="loginForm">
+        <h2>Formulario de Login</h2>
+        <div>
+            <label for="loginUsername">Nombre de Usuario:</label>
+            <input type="text" id="loginUsername" name="username" required />
+        </div>
+        <div>
+            <label for="loginPassword">Contraseña:</label>
+            <input type="password" id="loginPassword" name="password" required />
+        </div>
+        <button type="submit">Iniciar Sesión</button>
+
+        <p id="message"></p>  <!-- Este elemento debe existir -->
+        <p>¿No tienes cuenta? <a href="register.html">Registrarse</a></p>
+    </form>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
